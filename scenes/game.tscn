@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://i81cu1ajky0i"]
 
 [ext_resource type="PackedScene" uid="uid://bsbskw7ypego3" path="res://scenes/character_body_2d.tscn" id="1_cptft"]
-[ext_resource type="Script" path="res://scenes/character_body_2d.gd" id="2_hl4dt"]
+[ext_resource type="Script" uid="uid://billyndle8vx2" path="res://scenes/character_body_2d.gd" id="2_hl4dt"]
 [ext_resource type="Texture2D" uid="uid://dpr22u02bvkj0" path="res://Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="2_r7hic"]
 [ext_resource type="PackedScene" uid="uid://j6g6wimmd50a" path="res://scenes/animatable_body_2d.tscn" id="4_eev7l"]
 [ext_resource type="PackedScene" uid="uid://o87f44agslqf" path="res://scenes/coin.tscn" id="5_0a2jk"]
@@ -204,8 +204,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ytstc"]
 _data = {
-"RESET": SubResource("Animation_ock46"),
-"move": SubResource("Animation_3u34d")
+&"RESET": SubResource("Animation_ock46"),
+&"move": SubResource("Animation_3u34d")
 }
 
 [node name="Game" type="Node2D"]
@@ -229,7 +229,7 @@ position = Vector2(198, -71)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platform"]
 libraries = {
-"": SubResource("AnimationLibrary_ytstc")
+&"": SubResource("AnimationLibrary_ytstc")
 }
 autoplay = "RESET"
 
